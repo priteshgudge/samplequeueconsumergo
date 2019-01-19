@@ -1,4 +1,4 @@
-package main
+package sample
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"github.com/priteshgudge/samplequeueconsumergo/operators"
 )
 
-func main() {
+func sample3() {
 	queue := operators.GetNewQueue()
 	consumer := operators.GetNewConsumer(queue)
 	go consumer.RunConsumer()
